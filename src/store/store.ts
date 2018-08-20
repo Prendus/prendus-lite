@@ -1,10 +1,11 @@
 import {createStore} from 'redux';
+import {State, Action} from '../prendus-lite.d';
 
 const InitialState = {
 
 };
 
-const RootReducer = (state = InitialState, action) => {
+const RootReducer = (state: State = InitialState, action: Action) => {
     return state;
 };
 

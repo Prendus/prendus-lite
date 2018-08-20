@@ -1,5 +1,6 @@
 import {html, render} from 'lit-html/lib/lit-extended';
 import {Store} from '../../store/store';
+import {State} from '../../prendus-lite.d';
 
 class PrendusQuestionEdit extends HTMLElement {
     connectedCallback() {
@@ -9,7 +10,7 @@ class PrendusQuestionEdit extends HTMLElement {
         });
     }
 
-    render() {
+    render(state: State) {
         return html`
             <div>
                 prendus-question-edit

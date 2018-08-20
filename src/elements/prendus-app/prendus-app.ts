@@ -3,6 +3,7 @@ import '../prendus-question/prendus-question-create';
 import '../prendus-question/prendus-question-edit';
 import '../prendus-question/prendus-question-view';
 import {Store} from '../../store/store';
+import {State} from '../../prendus-lite.d';
 
 class PrendusApp extends HTMLElement {
     connectedCallback() {
@@ -12,7 +13,7 @@ class PrendusApp extends HTMLElement {
         });
     }
 
-    render() {
+    render(state: State) {
         return html`
             <div>
                 <prendus-question-create></prendus-question-create>

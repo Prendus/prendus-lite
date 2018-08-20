@@ -1,7 +1,8 @@
 import {html, render} from 'lit-html/lib/lit-extended';
 import {Store} from '../../store/store';
+import {State} from '../../prendus-lite.d';
 
-export class PrendusQuestionCreate extends HTMLElement {
+class PrendusQuestionCreate extends HTMLElement {
     connectedCallback() {
         Store.subscribe(() => render(this.render(Store.getState()), this));
         Store.dispatch({
@@ -9,7 +10,7 @@ export class PrendusQuestionCreate extends HTMLElement {
         });
     }
 
-    render() {
+    render(state: State) {
         return html`
             <div>prendus-question-create</div>
         `;
