@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "start": "cd src && zwitterion",
-    "install": "cd src && npm install"
+    "start": "cd client && zwitterion",
+    "install": "cd client && npm install"
   },
   "repository": {
     "type": "git",
