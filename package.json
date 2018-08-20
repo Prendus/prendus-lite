@@ -1,0 +1,25 @@
+{
+  "name": "prendus-lite",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "cd src && zwitterion",
+    "install": "cd src && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prendus/prendus-lite.git"
+  },
+  "author": "Jordan Last <jordan.michael.last@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prendus/prendus-lite/issues"
+  },
+  "homepage": "https://github.com/Prendus/prendus-lite#readme",
+  "devDependencies": {
+    "zwitterion": "^0.27.0"
+  },
+  "dependencies": {
+    "lit-html": "^0.10.2"
+  }
+}
