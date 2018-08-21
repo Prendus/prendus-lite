@@ -10,9 +10,31 @@ class PrendusQuestionCreate extends HTMLElement {
         });
     }
 
+    createQuestion() {
+        window.fetch(`http://localhost:4466`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                query: `
+                    mutation {
+                        createQuestion(data: {
+                            text: "hello"
+                            code: "hello"
+                        }) {
+                            id
+                        }
+                    }
+                `
+            })
+        });
+    }
+
     render(state: State) {
         return html`
             <div>prendus-question-create</div>
+            <button onclick=${() => this.createQuestion()}>Create Question</button>
         `;
     }
 }

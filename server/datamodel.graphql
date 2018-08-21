@@ -1,0 +1,5 @@
+type Question {
+  id: ID! @unique
+  text: String!
+  code: String!
+}
