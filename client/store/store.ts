@@ -1,11 +1,26 @@
 import {createStore} from 'redux';
-import {State, Action} from '../prendus-lite.d';
+import {
+    State,
+    Action
+} from '../prendus-lite.d';
 
-const InitialState = {
-
+const InitialState: State = {
+    components: {}
 };
 
-const RootReducer = (state: State = InitialState, action: Action) => {
+export const RootReducer = (state: State = InitialState, action: Action) => {
+    if (action.type === 'SET_COMPONENT_STATE') {
+        return {
+            ...state,
+            components: {
+                ...state.components,
+                [action.componentId]: {
+                    [action.key]: action.value
+                }
+            }
+        };
+    }
+
     return state;
 };
 
