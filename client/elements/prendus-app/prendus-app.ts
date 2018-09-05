@@ -17,7 +17,9 @@ class PrendusApp extends HTMLElement {
         return html`
             <div>
                 <prendus-question-create></prendus-question-create>
+                <hr>
                 <prendus-question-edit></prendus-question-edit>
+                <hr>
                 <prendus-question-view></prendus-question-view>
             </div>
         `;
