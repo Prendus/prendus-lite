@@ -14,12 +14,6 @@ class PrendusQuestionCreate extends HTMLElement {
         const assessmlTextarea: HTMLTextAreaElement = <HTMLTextAreaElement> this.querySelector(`#assessml-textarea`);
         const javascriptTextarea: HTMLTextAreaElement = <HTMLTextAreaElement> this.querySelector(`#javascript-textarea`);
 
-        // //TODO study defensive programming and see if this is the way we want to handle this situation
-        // if (assessmlTextarea.id !== 'assessml-textarea' || javascriptTextarea.id !== 'javascript-textarea') {
-        //     alert('Something went wrong');
-        //     return;
-        // }
-
         const assessML = assessmlTextarea.value;
         const javaScript = javascriptTextarea.value;
 
